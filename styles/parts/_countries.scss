@@ -1,0 +1,135 @@
+.countries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(181px, 1fr));
+    column-gap: 100px;
+    row-gap: 30px;
+}
+
+.countries-card:hover {
+    transform: scale(1.2);
+}
+
+.countries-cards {
+    position: relative;
+    top: 170px;
+
+    .countries-card {
+        width: 180px;
+        padding: 5px;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 5px 2px rgba(0, 152, 238, 0.15);
+        border-radius: 4px;
+
+        transition: 0.3s;
+
+        .title {
+            text-align: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 7px;
+            line-height: 8px;
+            color: #0199EE;
+        }
+
+        .flag_total-cases {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            .flag {
+                width: 31px;
+                height: 31px;
+                margin-right: 12px;
+            }
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 12px;
+                color: #0199EE;
+                margin-bottom: 6px;
+            }
+            .total-cases-img {
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 3px;
+                }
+                p {
+                    position: relative;
+                    top: 3px;
+                    
+                }
+                .countries-amount {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .countries-card-main {
+            .main-top {
+                margin-bottom: 8px;
+                display: flex;
+                justify-content: space-between;
+                .main-vaccinations {
+                    display: flex;
+                    align-items: center;
+
+                    .vaccinations-text {
+                        margin-left: 4px;
+                        p {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 6px;
+                            line-height: 7px;
+                            color:  #0199EE;
+                        }
+                        .amount {
+                            font-size: 9px;    
+                            margin-top: 2px;                    
+                        }
+                    }
+                }
+            }
+
+            .main-bottom {
+                display: flex;
+                justify-content: space-between;
+                .main-vaccinations {
+                    display: flex;
+                    align-items: center;
+
+                    .vaccinations-text {
+                        margin-left: 4px;
+                        p {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 6px;
+                            line-height: 7px;
+                            color:  #0199EE;
+                        }
+                        .amount {
+                            font-size: 9px;    
+                            margin-top: 2px;                    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.countries-card-update {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6px;
+    line-height: 7px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #0199EE;
+}
